@@ -3,8 +3,15 @@ let expToNextLevel = 10
 let expGained = 0
 let addAmount = 1
 let multi = 1.5
+let automateAmt = 0
 
-$("#button1").click(function() {
+setInterval(function(){
+  for(let i = 0; i < automateAmt; i++){
+    $("#addExp").click()
+  }  
+}, 500)
+
+$("#addExp").click(function() {
     expGained=expGained + addAmount
     
     
@@ -19,6 +26,7 @@ $("#button1").click(function() {
 }
 )
 
-$("#button2").click(function(){
-    addAmount=addAmount * multi
+$("#addAutomate").click(function(){
+    automateAmt++
+    
 })
