@@ -1,40 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>
-        Level
-        <span id="text1">0</span>
-    </h1>
-    <h2>
-        <span id="nextLevel">10</span>
-        to next level
-    </h2>
-    <h2>
-        Exp
-        <span id="expNum">0 </span>
-    </h2>
-    <h2>
-        <span id="gold">0 </span>
-        gold
-    </h2>
-    <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" id="addExp">
-        Kill monster
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" id="addAutomate">
-        Automate killing + 1
-      </button>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="main.js"></script> 
+    <div class="px-2">
+      <div class="flex -mx-2">
+        <div class="w-3/4 px-2">
+          <div class="bg-gray-400">
+            <h1>
+              Level
+              <span id="text1">0</span>
+            </h1>
+            <h2>
+              <span id="nextLevel">10</span>
+              to next level
+            </h2>
+            <h2>
+              Exp
+              <span id="expNum">0 </span>
+            </h2>
+            <h2>
+              <span id="gold">0 </span>
+              gold
+            </h2>
+            <button
+              class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              id="addExp"
+            >
+              Kill monster
+            </button>
+          </div>
+        </div>
+
+        <div class="w-1/4 px-2">
+          <div class="bg-gray-400">
+            <button
+              class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              id="addAutomate"
+            >
+              Automate killing + 1
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>
